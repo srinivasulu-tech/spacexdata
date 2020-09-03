@@ -36,7 +36,7 @@ class App1 extends Component {
         
         {this.state.spacexlaunchs.map((data) => (
          <flexbox style={{width:'50px',height:'30%'}} className="d-flex p-2 col-example"   display="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
-         <Box style={{width:'100px',height:'30%'}}>
+         <Box style={{width:'300px',height:'30%'}}>
                   <Card >
                      <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'50'}}>              
                      </CardMedia>
