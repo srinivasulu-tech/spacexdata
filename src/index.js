@@ -6,7 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import {flexbox} from '@material-ui/system';
 import App from "./App";
-import { CardMedia, Typography} from "@material-ui/core";
+import { CardMedia, Typography, Box} from "@material-ui/core";
 
 
 
@@ -32,29 +32,43 @@ class App1 extends Component {
         <center>
           <h1>SpaceXLaunch Programme</h1>
         </center>
-
+        <flexbox   display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
+         <Box style={{borderBlockColor:'red', border:'red'}}>
+         Item 1
+</Box><Box>
+         Item 2
+</Box><Box>
+         Item 3
+</Box><Box>
+         Item 4
+</Box><Box>
+         Item 5
+</Box></flexbox>
         {this.state.spacexlaunchs.map((data) => (
-<flexbox  flexDirection="row" flexWrap="wrap" justifyContent="flex-start">
-         <Card >
-            <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'30'}}>              
-            </CardMedia>
-          <CardContent> 
-              {data.mission_name}
-              <Typography gutterBottom variant="headline" component ="h2">
-                 {data.mission_id}
-                </Typography>
-                <Typography gutterBottom variant="headline" component ="h2">
-                {data.launch_year}
-                </Typography>
-                <Typography gutterBottom variant="headline" component ="h2">
-                 {data.land_success}
-                </Typography>
-                <Typography gutterBottom variant="headline" component ="h2">
-                  {data.launch_success}
-                </Typography>
-           </CardContent>
-         </Card>  
-         </flexbox>      
+         <flexbox className="d-flex p-2 col-example"   display="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
+         <Box>
+                  <Card >
+                     <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'30'}}>              
+                     </CardMedia>
+                   <CardContent> 
+                       {data.mission_name}
+                       <Typography gutterBottom variant="headline" component ="h2">
+                          {data.mission_id}
+                         </Typography>
+                         <Typography gutterBottom variant="headline" component ="h2">
+                         {data.launch_year}
+                         </Typography>
+                         <Typography gutterBottom variant="headline" component ="h2">
+                          {data.land_success}
+                         </Typography>
+                         <Typography gutterBottom variant="headline" component ="h2">
+                           {data.launch_success}
+                         </Typography>
+                    </CardContent>
+                  </Card>  
+         </Box>
+                  </flexbox>
+    
          ))}
 
       </div>
