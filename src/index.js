@@ -33,23 +33,12 @@ class App1 extends Component {
         <center>
           <h1>SpaceXLaunch Programme</h1>
         </center>
-        <flexbox   className="d-flex flex-row"  display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
-         <Box  className="d-flex flex-row" style={{backgroundColor:lightGreen,padding:1,border:2,}}>
-         Item 1
-</Box><Box>
-         Item 2
-</Box><Box>
-         Item 3
-</Box><Box>
-         Item 4
-</Box><Box>
-         Item 5
-</Box></flexbox>
+        
         {this.state.spacexlaunchs.map((data) => (
-         <flexbox className="d-flex p-2 col-example"   display="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
-         <Box>
+         <flexbox style={{width:'50px',height:'30%'}} className="d-flex p-2 col-example"   display="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
+         <Box style={{width:'100px',height:'30%'}}>
                   <Card >
-                     <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'30'}}>              
+                     <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'50'}}>              
                      </CardMedia>
                    <CardContent> 
                        {data.mission_name}
