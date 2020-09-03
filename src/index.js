@@ -32,8 +32,8 @@ class App1 extends Component {
         <center>
           <h1>SpaceXLaunch Programme</h1>
         </center>
-        <flexbox   display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
-         <Box style={{borderBlockColor:'red', border:'red'}}>
+        <flexbox  className="d-flex p-2 col-example"  display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
+         <Box className="d-flex p-2 col-example" style={{borderBlockColor:'red', border:'red'}}>
          Item 1
 </Box><Box>
          Item 2
