@@ -36,7 +36,7 @@ class App1 extends Component {
         {this.state.spacexlaunchs.map((data) => (
 <flexbox  flexDirection="row" flexWrap="wrap" justifyContent="flex-start">
          <Card >
-            <CardMedia image={data.flickr_images}>              
+            <CardMedia image={data.flickr_images} style={{height:0,paddingTop:'30'}}>              
             </CardMedia>
           <CardContent> 
               {data.mission_name}
