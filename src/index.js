@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import {flexbox} from '@material-ui/system';
 import App from "./App";
 import { CardMedia, Typography, Box} from "@material-ui/core";
+import { lightGreen } from "@material-ui/core/colors";
 
 
 
@@ -32,8 +33,8 @@ class App1 extends Component {
         <center>
           <h1>SpaceXLaunch Programme</h1>
         </center>
-        <flexbox  className="d-flex p-2 col-example"  display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
-         <Box className="d-flex p-2 col-example" style={{borderBlockColor:'red', border:'red'}}>
+        <flexbox   className="d-flex flex-row"  display="flex" flexDirection="column" flexWrap="wrap" justifyContent="flex-start" alignItems="flex-start">
+         <Box  className="d-flex flex-row" style={{backgroundColor:lightGreen,padding:1,border:2,}}>
          Item 1
 </Box><Box>
          Item 2
